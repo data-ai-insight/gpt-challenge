@@ -1,4 +1,6 @@
 import streamlit as st
+import sys
+sys.path.append('./')  # 현재 디렉토리를 경로에 추가
 from RAG import process_file, setup_chain
 
 # Streamlit 페이지 설정
