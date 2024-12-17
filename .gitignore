@@ -1,2 +1,5 @@
 .env
 venv/
+.cache/
+.__pycache__
+uploaded_files/
