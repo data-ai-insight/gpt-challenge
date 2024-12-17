@@ -9,7 +9,7 @@ from langchain.chat_models import ChatOpenAI
 from langchain.memory import ConversationBufferMemory
 from langchain.chains import ConversationalRetrievalChain
 
-def process_file(file):
+def process_file(file, api_key):
     """
     파일을 로드하고 FAISS 벡터 스토어를 생성합니다.
     """
