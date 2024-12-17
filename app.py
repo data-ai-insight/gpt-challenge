@@ -27,7 +27,7 @@ def process_file(file):
 
     # 임베딩 및 캐싱
     cache_dir = LocalFileStore(f"./.cache/{file.name}")
-    embeddings = OpenAIEmbeddings()
+    embeddings = OpenAIEmbeddings(openai_api_key=api_key)
     cached_embeddings = CacheBackedEmbeddings.from_bytes_store(embeddings, cache_dir)
 
     # 벡터 스토어 생성
@@ -92,7 +92,7 @@ if not api_key:
 # 파일 업로드 확인 및 처리
 if uploaded_file:
     st.info("파일을 처리 중입니다. 잠시만 기다려주세요...")
-    retriever = process_file(uploaded_file)
+    retriever = process_file(uploaded_file, api_key)
     chain = setup_chain(retriever, api_key)
     st.success("파일 처리가 완료되었습니다! 질문을 시작하세요.")
 
