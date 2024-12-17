@@ -4,3 +4,4 @@ openai
 faiss-cpu
 tiktoken
 unstructured
+langchain-community
