@@ -24,7 +24,7 @@ with st.sidebar:
     # 파일 업로드
     uploaded_file = st.file_uploader("문서를 업로드하세요 (.txt, .pdf, .docx)", type=["txt", "pdf", "docx"])
     # GitHub 링크
-    github_link = "https://github.com/your-github-repo"
+    github_link = "https://github.com/data-ai-insight/gpt-challenge.git"
     st.markdown(f"[🔗 GitHub 리포지토리]({github_link})")
 
 # API 키 입력 확인
