@@ -180,7 +180,7 @@ with st.sidebar:
     
     st.markdown("---")
     st.markdown("### Project Links")
-    st.markdown("[GitHub Repository](https://github.com/yourusername/research-assistant)")
+    st.markdown("[GitHub Repository](https://github.com/data-ai-insight/gpt-challenge)")
     
 # Session state 초기화
 if "assistant" not in st.session_state:
